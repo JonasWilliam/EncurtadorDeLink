@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "d94eddb3-5c51-4164-9edf-95f1e629a288",
+		"name": "Requisições",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Select all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/link",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/link/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"link",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisa por UrlCurta",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n\t\t\t\"url\": \"www.google.com\",\r\n            \"urlCurta\": \"gg\"\r\n},\r\n{\r\n\t\t\t\"url\": \"www.facebook.com\",\r\n            \"urlCurta\": \"www.fb.com\"\r\n},\r\n{\r\n\t\t\t\"url\": \"https://tds.company/\",\r\n            \"urlCurta\": \"tds\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/link",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/link/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"link",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
